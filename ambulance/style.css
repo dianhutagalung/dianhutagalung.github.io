@@ -1,0 +1,531 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+}
+button {
+    font-family: 'poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    /* background: lightblue; */
+    width: 90%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+}
+
+.kontak {
+    width: 60%;
+    margin-top: 100px;
+    
+}
+
+.kontak a{
+    text-decoration: none;
+}
+
+.kontak .ctk {
+    margin-left: 40px;
+    margin-bottom: 20px;
+    /* filter: drop-shadow(0px 1px 0px black); */
+}
+.kontak .kargo {
+    animation: drop 1.5s ease;
+}
+.kontak .kota {
+    animation: drop 2.5s ease;
+}
+
+.kontak h1 {
+    
+    background: linear-gradient(to right, #494964, #6f6f89);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.logo-container,
+.nav-links,
+.card {
+    display: flex;
+}
+
+.logo-container {
+    flex: 1;
+}
+.logo-container a{
+    text-decoration: none;
+}
+.logo {
+    font-weight: 400;
+    margin: 5px;
+    cursor: pointer;
+}
+.logo1 {
+    text-decoration: none;
+    color: black;
+    
+}
+nav {
+    flex: 2;
+}
+.nav-links {
+    justify-content: space-around;
+    list-style: none;
+}
+.nav-link {
+    color: #5f5f79;
+    font-size: 18px;
+    text-decoration: none;
+}
+.cart {
+    /* flex: 1; */
+    justify-content: right;
+}
+
+.banner {
+    width: 100%;
+    height: 25px;
+    background: #c36cbb;
+    /* color:white; */
+}
+
+.peti{
+    margin-top: 30px;
+    animation: sideRight2 2s ease-out;
+}
+.peti p1{
+    font-size: 10px;
+}
+.peti a{
+    text-decoration: none;
+    width: 200px;
+    border: 1px solid thistle;
+    font-size: 12px;
+    padding: 15px 10px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.peti a:hover{
+    cursor: pointer;
+    background: violet;
+    color: white;
+}
+
+.presentation {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+.introduction {
+    flex: 1;
+}
+.intro-text {
+    animation: sideLeft 2s ease-in;
+}
+.intro-text h1{
+    font-size: 44px;
+    font-weight: 500;
+    background: linear-gradient(to right, #494964, #6f6f89);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: sideLeft 2s ease;
+}
+.intro-text p {
+    margin-top: 5px;
+    font-size: 22px;
+    color: #585772;
+    
+}
+.intro-text .hp {
+    text-decoration: none;
+}
+.cta {
+    padding: 50px 0px 0px 0px;
+    animation: sideRight2 3s ease-out;
+}
+.cta-select {
+    font-family: 'poppins', sans-serif;
+    border: 2px solid #c36cbb;
+    background: transparent;
+    color: #c36cbb;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cta-add {
+    background: #c36cbb;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    color: white;
+    margin: 30px 0px 0px 30px;
+}
+.cover, .cover-peti {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+}
+.cover img {
+    height: 100%;
+    filter: drop-shadow(0px 5px 3px black);
+    animation: drop 8s ease;
+}
+.cover-peti img {
+    height: 100%;
+    filter: drop-shadow(0px 5px 3px black);
+    animation: sideRight 10s ease;
+}
+
+.big-circle {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    opacity: 0.5;
+    height: 80%;
+}
+.medium-circle {
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    z-index: -1;
+    opacity: 0.4;
+    height: 60%;
+}
+.small-circle {
+    position: absolute;
+    bottom: 0%;
+    left: 20%;
+    z-index: -1;
+}
+
+.laptop-select {
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    right: 20%;
+}
+
+
+.produk {
+    display: block;
+    width: 100%;
+    height: 80vh;
+    overflow: auto;
+    
+}
+
+.produk .p-image{
+    display: inline-block;
+    width: 40%;
+    /* border: 1px solid black; */
+    margin: 10px;
+}
+.produk .p-image img {
+    width: 300px;
+    height: 150px;
+    margin-bottom: 50px;
+
+}
+.produk .p-image img:nth-child(2) {
+    width: 100px;
+    height: 100px;
+    margin-left: 150px ;
+    float: right;
+}
+
+.produk .p-content{
+    display: inline-block;
+    width: 40%;
+    height: 50vh;
+    border: 1px solid black;
+}
+
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyFrames sideRight {
+    0% {
+        opacity: 0;
+        transform: translatex(80px);
+    }
+    50% {
+        opacity: 1;
+        transform: translatex(0px);
+    }
+    85% {
+        opacity: 1;
+        transform: translatex(0px);
+    }
+    100%{
+        opacity: 0;
+        transform: translatex(-80px);
+    }
+}
+
+@keyFrames sideRight2 {
+    0% {
+        opacity: 0;
+        transform: translatex(80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translatex(0px);
+    }
+}
+
+@keyFrames sideLeft {
+    0% {
+        opacity: 0;
+        transform: translatex(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translatex(0px);
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .presentation {
+        flex-direction: column;
+    }
+    .introduction {
+        margin-top: 5vh;
+        text-align: center;
+    }
+    .intro-text h1 {
+        font-size: 30px;
+    }
+    .intro-text p {
+        font-size: 18px;
+    }
+    .cta {
+        padding: 10px 0px 0px 0px;
+    }
+    .laptop-select {
+        bottom: 5%;
+        right: 50%;
+        transform: translate(50%, 5%);
+    }
+    .cover img {
+        height: 80%;
+        margin-top: 30px;
+    }
+    .small-circle,
+    .medium-circle,
+    .big-circle {
+        opacity: 0.2;
+    }
+}
+
+
+  @media screen and (max-device-width: 425px){ 
+
+      main {
+          overflow: hidden;
+      }
+
+      .banner{
+        display: none;
+      }
+      .bulatan-gila{
+          overflow: hidden;
+      }
+
+    .logo {
+        flex: 2;
+        
+    }
+    
+    .nav-links {
+        background: blue;
+        width: 0px; 
+    }
+    .nav-links li:first-child,
+    .nav-links li:nth-child(2){
+        display: none;
+    }
+    .nav-links li:nth-child(3){
+        padding-left: 200px;
+    }
+
+    .presentation {
+        flex-direction: column;
+        margin: 30px;
+    }
+    .introduction {
+        margin-top: 5vh;
+        text-align: center;
+    }
+    .intro-text h1 {
+        font-size: 23px;
+    }
+    .intro-text p {
+        font-size: 9px;
+    }
+    .cta {
+        padding: 10px 0px 0px 0px;
+        
+    }
+    .cta-select {
+        width: 30%;
+        height: 30px;
+        font-size: 10px;
+    }
+    .cta-add {
+        width: 30%;
+        height: 30px;
+        font-size: 10px;
+    }
+    .laptop-select {
+        bottom: 5%;
+        right: 50%;
+        transform: translate(50%, 5%);
+    }
+    .cover img, .cover-peti img {
+        
+        height: 50%;
+    }
+    .small-circle,
+    .medium-circle,
+    .big-circle {
+        opacity: 0.2;
+        
+    }
+    .big-circle {
+        left: 0px;
+    }
+
+    .kontak {
+        width: 100%;
+        text-align: center;
+    }
+
+    
+    header a {
+        color: black;
+        text-decoration: none;
+    }
+
+    header {
+        width: 350px;
+        margin-left: 30px;
+    }
+     main {
+         width: 350px;
+     }
+    
+} */
+
+
+
+/* @media screen and (max-width: 375px){
+    .logo {
+        flex: 2;
+       
+    }
+    .nav-links {
+        background: blue;
+        width: 0px; 
+    }
+    .nav-links li:first-child,
+    .nav-links li:nth-child(2){
+        display: none;
+    }
+    .nav-links li:nth-child(3){
+        padding-left: 350px;
+    }
+
+    .presentation {
+        flex-direction: column;
+        margin: 30px;
+    }
+    .introduction {
+        margin-top: 5vh;
+        text-align: center;
+    }
+    .intro-text h1 {
+        font-size: 23px;
+    }
+    .intro-text p {
+        font-size: 9px;
+    }
+    .cta {
+        padding: 10px 0px 0px 0px;
+        
+    }
+    .cta-select {
+        width: 30%;
+        height: 30px;
+        font-size: 10px;
+    }
+    .cta-add {
+        width: 30%;
+        height: 30px;
+        font-size: 10px;
+    }
+    .laptop-select {
+        bottom: 5%;
+        right: 50%;
+        transform: translate(50%, 5%);
+    }
+    .cover img {
+        height: 80%;
+    }
+    
+    .small-circle,
+    .medium-circle,
+    .big-circle {
+        opacity: 0.2;
+        
+    }
+    .big-circle {
+        position: absolute;
+        right:-20;
+    }
+
+    .kontak {
+        width: 100%;
+        text-align: center;
+    }
+
+    header {
+        width: 430px;
+        margin-left: 10px;
+    }
+    header a {
+        color: black;
+        text-decoration: none;
+    }
+     main {
+         width: 430px;
+     }
+
+     
+    
+} */
+
