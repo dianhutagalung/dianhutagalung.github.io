@@ -1,0 +1,68 @@
+.contacts{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.card {
+    display: block;
+    width: 250px;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 #c36cbb;
+    text-align: center;
+    font-family: arial;
+    border-radius: 10px;
+}
+
+.image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 #eee;
+    overflow: hidden;
+}
+
+.card-img{
+    width: 250px;
+    height: 180px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 20px;
+    
+    
+}
+
+.image img{
+    width: 150px;
+    height: 150px;
+} 
+
+
+.title{
+    color: grey;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background: #c36cbb;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+button:hover, a:hover {
+    opacity: 0.7;
+}
